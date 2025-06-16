@@ -9,7 +9,7 @@
         $password=$_POST['password'];
         $gender=$_POST['gender'];
     
-    $sql="UPDATE `users` SET `firstname`='$first_name',`lastname`='$last_name',`email`='$email',`password`='$password',`gender`='$gender'";
+    $sql="UPDATE `users` SET `firstname`='$first_name',`lastname`='$last_name',`email`='$email',`password`='$password',`gender`='$gender' where `id`='$user_id'";
     
     $result=mysqli_query($conn,$sql);
 
